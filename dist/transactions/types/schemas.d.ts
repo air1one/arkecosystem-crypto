@@ -1,0 +1,17 @@
+export declare const transactionBaseSchema: Record<string, any>;
+export declare const extend: (parent: any, properties: any) => TransactionSchema;
+export declare const signedSchema: (schema: TransactionSchema) => TransactionSchema;
+export declare const strictSchema: (schema: TransactionSchema) => TransactionSchema;
+export declare const transfer: Record<string, any>;
+export declare const secondSignature: Record<string, any>;
+export declare const delegateRegistration: Record<string, any>;
+export declare const vote: Record<string, any>;
+export declare const multiSignature: Record<string, any>;
+export declare const multiSignatureLegacy: Record<string, any>;
+export declare const ipfs: Record<string, any>;
+export declare const htlcLock: Record<string, any>;
+export declare const htlcClaim: Record<string, any>;
+export declare const htlcRefund: Record<string, any>;
+export declare const multiPayment: Record<string, any>;
+export declare const delegateResignation: Record<string, any>;
+export declare type TransactionSchema = typeof transactionBaseSchema;
